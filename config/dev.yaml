@@ -1,0 +1,11 @@
+environment: dev
+logging_level: DEBUG
+data_path: src/explainable_aml/data/transactions.csv
+model_path: src/explainable_aml/model/risk_model_bundle.pkl
+shap_background_samples: 50
+threshold: 0.35
+model_params:
+  n_estimators: 50
+  max_depth: 3
+  learning_rate: 0.1
+  random_state: 42

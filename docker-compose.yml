@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  explainable-aml:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/src/explainable_aml/logs
+      - ./config:/app/config
+    environment:
+      - ENV=dev

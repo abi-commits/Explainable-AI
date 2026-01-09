@@ -1,0 +1,11 @@
+environment: prod
+logging_level: INFO
+data_path: /app/data/transactions.csv
+model_path: /app/model/risk_model_bundle.pkl
+shap_background_samples: 200
+threshold: 0.35
+model_params:
+  n_estimators: 200
+  max_depth: 6
+  learning_rate: 0.1
+  random_state: 42
