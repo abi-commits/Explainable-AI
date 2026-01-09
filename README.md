@@ -18,10 +18,10 @@ The system is organized into modular layers:
 
 ```mermaid
 graph TD
-    A[Configuration & Data] --> B[Model Layer (XGBoost)]
-    B --> C[Explainability Layer (SHAP)]
-    C --> D[NLP Layer (Text Gen)]
-    D --> E[Dashboard Layer (Streamlit)]
+    A[Configuration & Data] --> B[Model Layer - XGBoost]
+    B --> C[Explainability Layer - SHAP]
+    C --> D[NLP Layer - Text Gen]
+    D --> E[Dashboard Layer - Streamlit]
     E --> F[Logging & Audit]
     B --> G[Validation & Tests]
 ```
